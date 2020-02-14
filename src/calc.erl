@@ -1,7 +1,7 @@
 -module(calc).
 
--export([add/2, sub/2, multi/2, division/2]).
-
+-export([add/2, sub/2, multi/2, division/2, power/2]).
+-import(math,[pow/2]).
 
 %% @doc Adds two integers
 %%
@@ -36,4 +36,4 @@ division(X,Y) ->
 %% This power `X` to `Y`
 -spec power(integer(), integer()) -> integer().
 power(X,Y) ->
-    X ** Y.
+    math:pow(X,Y).
