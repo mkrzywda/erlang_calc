@@ -13,3 +13,5 @@ mul_test() ->
 div_test() ->
     ?assertEqual(3 div 3, calc:division(3,3)).
 
+power_test() ->
+    ?assertEqual(2 ** 3, calc:power(2,3)).
